@@ -1,0 +1,3 @@
+export const TMDB_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzZhZjJmN2MwMWM3ZTc4NmI5OGU3ZjY2N2Y4NWRkZSIsInN1YiI6IjY1MTU1YjFhYzUwYWQyMDE0ZGNjMjQ2MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KTEAEFoWSjLNZKPvwy25kk-7KVaowYY0O02Kvtoctj0";
+
+export const SEARCH_MOVIE_URL = "https://api.themoviedb.org/3/search/movie?page=1&query="
