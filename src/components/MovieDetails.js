@@ -3,7 +3,7 @@ import React from "react"
 import { useParams } from "react-router";
 import { getMovieById } from "../services/movies";
 
-export default function MovieDetails(props) {
+export default function MovieDetails() {
   const params = useParams();
   const movieId = params.movieId;
 
