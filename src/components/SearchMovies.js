@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 
-import moment from "moment";
-import debounce from "lodash/debounce"
 import { searchMovies } from "../services/movies";
+import Movie from "./Movie";
 
 const SearchMovies = () => {
 
@@ -32,37 +31,10 @@ const SearchMovies = () => {
             {
               movies.map(movie => {
                 return (
-                  <li >
-                    <div className="result-card">
-                      <div className="poster-wrapper">
-                        <img
-                          src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-                          alt={`Avengers: Infinity War`}
-                        />
-                      </div>
-                      {/* moment("2011-10-31", "YYYYMMDD") */}
-                      <div className="info">
-                        <div className="header">
-                          <h3 className="title">{movie.title}</h3>
-                          <h4 className="release-date">
-                            {moment(movie.release_date, "YYYY-MM-DD").format("DD-MM-YYYY")}
-                          </h4>
-                        </div>
-
-                        <div className="controls">
-                          <button
-                            className="btn"
-                          >
-                            View
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+                  <Movie key={movie.id} movie={movie} />
                 )
               })
             }
-
           </ul>
         </div>
       </div>
