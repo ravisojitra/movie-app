@@ -7,8 +7,5 @@ export const FETCH_TOP_RATED_URL = "https://api.themoviedb.org/3/movie/top_rated
 export const FETCH_POPULAR_URL = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
 export const FETCH_UPCOMING_MOVIES = "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1"
 
-export const FETCH_NETFLIX_ORIGINALS_URL = "https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&page=1&timezone=%20Europe%2FIstanbul&with_networks=213";
-export const FETCH_HISTORY_MOVIES_URL = "https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=36";
-export const FETCH_ANIMATION_MOVIES_URL = "https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=16";
-export const FETCH_FANTASY_MOVIES_URL = "https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=14";
-export const FETCH_ROMANCE_MOVIES_URL = "https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=10749";
+export const FETCH_MOVIE_VIDEOS = (movieId) => `https://api.themoviedb.org/3/movie/${movieId}/videos?language=en-US`
+export const FETCH_MOVIE_CAST = (movieId) => `https://api.themoviedb.org/3/movie/${movieId}/credits?language=en-US`

@@ -21,6 +21,22 @@ body {
   width: 100%;
 }
 
+.movie-details {
+  padding: 50px !important;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.movie-details .inner-content {
+  gap: 40px;
+}
+
+.movie-details .movie-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 *,
 *:before,
 *:after {

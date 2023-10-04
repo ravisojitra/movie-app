@@ -1,4 +1,4 @@
-import { FETCH_POPULAR_URL, FETCH_TOP_RATED_URL, FETCH_TRENDING_URL, FETCH_UPCOMING_MOVIES, MOVIE_DETAILS, SEARCH_MOVIE_URL } from "./constants";
+import { FETCH_MOVIE_CAST, FETCH_MOVIE_VIDEOS, FETCH_POPULAR_URL, FETCH_TOP_RATED_URL, FETCH_TRENDING_URL, FETCH_UPCOMING_MOVIES, MOVIE_DETAILS, SEARCH_MOVIE_URL } from "./constants";
 import callApi from "./utils";
 
 export function searchMovies(searchTerm) {
@@ -26,4 +26,11 @@ export function getTopRatedMovies() {
 
 export function getUpcomingMovies() {
   return callApi(FETCH_UPCOMING_MOVIES)
+}
+
+export function getMovieVideos(movieId) {
+  return callApi(FETCH_MOVIE_VIDEOS(movieId))
+}
+export function getMovieStarCast(movieId) {
+  return callApi(FETCH_MOVIE_CAST(movieId))
 }

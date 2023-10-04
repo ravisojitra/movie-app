@@ -10,7 +10,6 @@ export default function callApi(url, method, data, headers = {}) {
     },
     data
   }).then(result => {
-    console.log(result);
     return result.data;
   }).catch(err => {
     console.log("we got some error => ", err)

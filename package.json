@@ -7,12 +7,16 @@
     "cra-template": "1.1.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "rc-tabs": "^12.12.1",
     "react": "^17.0.1",
+    "react-bootstrap-tabs": "^2.0.0",
     "react-content-loader": "^6.2.1",
     "react-dom": "^17.0.1",
+    "react-player": "^2.13.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2"
+    "react-scripts": "4.0.2",
+    "react-tabs": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
